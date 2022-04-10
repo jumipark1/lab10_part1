@@ -1,0 +1,37 @@
+#container1 { grid-area: header; }
+#container2 { grid-area: menu; }
+#container3 { grid-area: main; }
+
+#container{
+    display: grid;   
+    grid-template-areas:
+    'header header  menu menu'
+    'header header  menu menu'
+    'main main  menu menu'
+    'main main  menu menu';
+  gap: 1px;
+  background-color: #f6f9fb;
+  padding:10px;
+  
+            
+        }
+#container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 0.3px 0;
+  border: 1px solid black;
+  font-size: 25px;
+}
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+}
+table{
+  border: 1px solid black;
+  padding: 1px;
+  border-collapse: collapse;
+  gap: 1px;
+}
+td,tr{
+  border: 1px solid  black ;
+  padding:10px 20px;
+}
